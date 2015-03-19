@@ -1,0 +1,16 @@
+{
+  "name": "mean-project",
+  "version": "0.0.1",
+  "authors": [
+    "Dara Dermody <daradermody@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
