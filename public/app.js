@@ -8,8 +8,8 @@ jetbrains.controller("mediaController", function($http) {
     this.loadMedia = function() {
         $http.get(URL + "/library").success(function(media) {
             console.log(media);
-            app.media = media
-        })
+            app.media = media;
+        });
     };
 
     app.loadMedia();
