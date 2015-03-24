@@ -1,17 +1,15 @@
 var jetbrains = angular.module("mediaPlayer", []);
 
-jetbrains.controller("mediaController", function($http) {
-    var app = this;
+jetbrains.controller("mediaController", ['$scope', '$http', function($scope, $http) {
     var URL = "http://localhost:3000";
-    app.media = ["testing"];
 
-    this.loadMedia = function() {
+    $scope.loadMedia = function() {
         $http.get(URL + "/library").success(function(media) {
             console.log(media);
-            app.media = media;
+            $scope.media = media;
         });
     };
 
-    app.loadMedia();
+    $scope.loadMedia();
 
-});
+}]);

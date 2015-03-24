@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body ng-app="mediaPlayer" ng-controller="mediaController as app">
 
+<body ng-app="mediaPlayer" ng-controller="mediaController as app">
 <ul>
-    <li ng-repeat="mediaItem in app.media">
+    <li ng-repeat="mediaItem in media">
         <h2 ng-bind="mediaItem"></h2>
         <video height="500" width="889" controls>
             <source src="{{mediaItem}}" type="video/mp4">
@@ -17,6 +17,6 @@
 </ul>
 
 <script src="bower_components/angular/angular.js"></script>
-<script src="app.js"></script>
+<script src="js/controllers/app.js"></script>
 </body>
 </html>

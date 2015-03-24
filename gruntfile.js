@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 	var watchFiles = {
 		serverJS: ['gruntfile.js', 'server/server.js'],
 		clientViews: ['public/*.html'],
-		clientJS: ['public/*.js'],
+		clientJS: ['public/js/controllers/*.js']
 	};
 
 	// Project Configuration
