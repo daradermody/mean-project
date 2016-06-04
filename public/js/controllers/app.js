@@ -4,9 +4,8 @@ jetbrains.controller("mediaController", ['$scope', '$http', function($scope, $ht
     var URL = "http://localhost:3000";
 
     $scope.loadMedia = function() {
-        $http.get(URL + "/library").success(function(media) {
-            console.log(media);
-            $scope.media = media;
+        $http.get(URL + "/library").success(function(response) {
+            $scope.media = response;
         });
     };
 
